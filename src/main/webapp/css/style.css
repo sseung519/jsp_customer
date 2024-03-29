@@ -1,0 +1,409 @@
+@charset "UTF-8";
+
+/* 초기화 태그 */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background-color: black !important;
+}
+
+ul, li {
+	list-style: none ;
+}
+
+a {
+	text-decoration: none  !important;
+	color: inherit  !important; /*부모태그의 컬러를 상속받아서 사용*/
+	cursor: pointer  !important;
+}
+
+/* 공통 */
+
+strong {
+	color: white !important; 
+}
+
+
+strong {
+	color: white;
+}
+
+.bt_wrap {
+	margin-top: 30px  !important;
+	text-align: center  !important;
+	font-size: 0  !important;
+	
+	
+}
+
+.bt_wrap a {
+	display: inline-block  !important;
+	min-width: 80px  !important; /* 80px보다 작아질수 없다. */
+	margin-left: 10px  !important;
+	padding: 10px  !important;
+	border: 1px solid #fff  !important;
+	border-radius: 5px;
+	font-size: 1.4rem  !important; /* 1.4배 */
+	text-align: center  !important;
+	color: white !important;
+	background-color: rgb(55,59,62);
+}
+
+.bt_wrap a:hover {
+	/* text-decoration: underline !important; */ 
+	background-color: white;
+	color: black !important;
+	border:1px solid yellow !important;
+	border-radius: 5px;
+}
+
+.bt_wrap a.on { /* a태그 이면서 on 클래스를 가진 */
+	background: rgb(55,59,62);
+	color: #fff !important;
+}
+
+.bt_wrap a.on:hover { /* a태그 이면서 on 클래스를 가진 */
+	background-color: white !important;
+	color: black !important;
+	border:1px solid yellow !important;
+	border-radius: 5px;
+}
+
+/* index.jsp */
+
+.wrap {
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+.main {
+	width: 100%;
+	border-top: 1px solid #000;
+}
+
+.main .table_div {
+	margin-top: 30px;
+}
+
+.customer_list {
+	width: 100% !important;
+	
+	border-collapse: collapse !important;
+	font-size: 1.5rem !important;
+}
+
+.header {
+	margin: 30px 0;
+}
+
+.header strong {
+	font-size: 3rem;
+	padding: 30px 10px;
+	
+}
+
+.customer_list th, .customer_list td {
+	border-bottom: 1px solid #444444;
+	padding: 10px;
+	text-align: center;
+}
+
+.customer_list td.title > a {
+	text-decoration: none  !important;
+	color: inherit  !important; /*부모태그의 컬러를 상속받아서 사용*/
+	cursor: pointer  !important;
+}
+
+.customer_list td.title > a:hover {
+	/* text-decoration: underline !important ; */
+	background-color: white;
+	color: black !important;
+	
+	
+}
+
+.customer_page {
+	margin-top: 30px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.customer_page a {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	box-sizing: border-box;
+	line-height: 32px;
+	color: #fff !important;
+}
+
+.customer_page a:hover {
+	text-decoration: underline;
+}
+
+.customer_page a.bt {
+	font-size: 1.2rem;
+	letter-spacing: -1px;
+}
+
+.customer_page a.num {
+	font-size: 1.4rem;
+}
+
+.customer_page a.num.on {
+	border-color: #fff;
+	background: #fff;
+	color: #000 !important;
+}
+
+
+/* view.jsp, register.jsp */
+
+.customer_wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.customer_view_wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.customer_title {
+	margin : 30px 10px;
+}
+
+.customer_title strong {
+	font-size: 3rem;
+}
+
+.customer_title p {
+	margin-top: 4ps;
+	font-size: 1.4rem;
+	color: white;
+}
+
+/* view.jsp */
+
+.customer_view {
+	background-color: rgb(55,59,62);
+	border: 1px rgb(55,59,62) solid;
+	border-radius: 9px;
+}
+
+.card p {
+	color: black;
+	font-size: 1.4rem;
+}
+
+.card-text {
+	border-bottom: 1px lightgray dashed;
+}
+
+.edit-btn1, .edit-btn2 {
+	width: 100px;
+	color: white !important;
+}
+
+.card-link {
+	text-align:center;
+}
+
+
+
+/* register.jsp */
+
+.customer_register {
+	border: 1px solid #fff;
+	border-radius: 5px;
+	background-color: rgb(55,59,62);
+}
+
+.customer_register label {
+	color: white;
+}
+
+.customer_register dt {
+	color: white;
+}
+
+.customer_register .title, .customer_register .info {
+	padding: 15px;
+}
+
+.customer_register .info {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #000;
+	font-size: 0;
+}
+
+.customer_register .title dl {
+	font-size: 0;
+}
+
+.customer_register .info dl {
+	display: inline-block;
+	width: 50%;
+	vertical-align: middle; /* 수직상에서 가운데 정렬 */
+}
+
+.customer_register .title dt,
+.customer_register .title dd,
+.customer_register .info dd,
+.customer_register .info dt {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.4rem;
+}
+
+.customer_register .title dt,
+.customer_register .info dt {
+	width: 100px;
+}
+
+.customer_register .title dd {
+	width: calc(100% - 100px);
+}
+
+.customer_register .title input[type="text"],
+.customer_register .info input[type="text"],
+.customer_register .info input[type="password"] {
+	padding: 10px;
+	box-sizing: border-box; /* border, padding 포함 */
+}
+
+.customer_register .title input[type="text"] {
+	width: 80%;
+}
+
+.customer_register .cont {
+	border-bottom: 1px solid #000;
+}
+
+.customer_register .reg {
+	width: 180px !important;
+	height: 30px !important;
+}
+
+
+/* 0 ~ 767px */
+@media all and (max-width: 767px) {
+	/* index.jsp 반응형 적용 */
+	.wrap {
+		width: 95vw;
+		margin: 0 auto;
+	}
+	
+	.customer_list th:nth-of-type(1),
+	.customer_list td:nth-of-type(1) {
+		display: none;
+	}
+	
+	.customer_list th:nth-of-type(3),
+	.customer_list td:nth-of-type(3) {
+		display: none;
+	}
+	
+	.customer_list th:nth-of-type(4),
+	.customer_list td:nth-of-type(4) {
+		display: none;
+	}
+	
+	
+	/* view.jsp, register.jsp 반응 */
+	.board_wrap{
+		width: 100vh
+	}
+	
+	.customer_register .title dt {
+		width: 70px;
+	}
+	
+	.customer_register .info dt {
+		width: 70px;
+		margin-bottom: 10px;
+	}
+	
+	.customer_register .title input[type="text"] {
+		width: 100%;
+	}
+	
+	.customer_register .info input[type="text"],
+	.customer_register .info input[type="password"] {
+		width: 80%;
+	}
+	
+	.customer_register .info dl {
+		width:100%
+	}
+	
+	.customer_view .info dl {
+		padding: 0 10px;
+	}
+	
+	.customer_view .info dl dt,
+	.customer_view .info dl dd {
+		display: inline-block;
+		font-size: 1rem;
+	}
+	
+	.customer_view .info dl:nth-of-type(1),
+	.customer_view .info dl:nth-of-type(3) {
+		display: none;
+	}
+	
+	.customer_view .info dl::before {
+		display: none;
+	}
+	
+	.customer_view .cont img {
+		width: 50%;
+	}
+}
+
+/* 768 ~ 1000px */
+@media all and (max-width: 1000px) {
+	/* index.jsp 반응형 적용 */
+	.wrap {
+		width: 100vw; /* 뷰포트의 크기에 맞춰서 width를 100%로  */
+	}
+	
+	/* view.jsp, write.jsp 반응 */
+	.board_wrap{
+		width: 100vh
+	}
+}
+
+
+/* 푸터 */
+.footer {
+   background-color: rgb(33, 37, 41);
+   padding: 20px 0;
+   border-top: 1px solid gray;
+   /* margin-top: 100px; */
+   width: 100%;
+   margin-top: 50px !important;
+}
+
+.footer div div {
+   display: flex;
+   justify-content: space-around;
+}
+
+.footer p {
+   color: white;
+}
+
+
+
+
