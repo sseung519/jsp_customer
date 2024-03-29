@@ -28,7 +28,7 @@ public class CustomerDAO {
 	//고객리스트를 불러오는 메소드
 	public ArrayList<Customer> getList() throws Exception {
 		Connection conn = open(); //DB 커넥션 열기
-		ArrayList<Customer> customerList = new ArrayList<>(); //Board 객체를 저장할 ArrayList
+		ArrayList<Customer> customerList = new ArrayList<>(); //customer 객체를 저장할 ArrayList
 		
 		String sql = "select id, name, point, grade from customer order by id"; //쿼리문
 		PreparedStatement pstmt = conn.prepareStatement(sql); //쿼리문 등록

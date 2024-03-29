@@ -237,7 +237,7 @@ strong {
 	color: white;
 }
 
-.customer_register .title, .customer_register .info {
+.customer_register .info {
 	padding: 15px;
 }
 
@@ -247,18 +247,13 @@ strong {
 	font-size: 0;
 }
 
-.customer_register .title dl {
-	font-size: 0;
-}
-
 .customer_register .info dl {
 	display: inline-block;
 	width: 50%;
 	vertical-align: middle; /* 수직상에서 가운데 정렬 */
 }
 
-.customer_register .title dt,
-.customer_register .title dd,
+
 .customer_register .info dd,
 .customer_register .info dt {
 	display: inline-block;
@@ -266,25 +261,18 @@ strong {
 	font-size: 1.4rem;
 }
 
-.customer_register .title dt,
+
 .customer_register .info dt {
 	width: 100px;
 }
 
-.customer_register .title dd {
-	width: calc(100% - 100px);
-}
 
-.customer_register .title input[type="text"],
 .customer_register .info input[type="text"],
 .customer_register .info input[type="password"] {
 	padding: 10px;
 	box-sizing: border-box; /* border, padding 포함 */
 }
 
-.customer_register .title input[type="text"] {
-	width: 80%;
-}
 
 .customer_register .cont {
 	border-bottom: 1px solid #000;
@@ -321,7 +309,7 @@ strong {
 	
 	
 	/* view.jsp, register.jsp 반응 */
-	.board_wrap{
+	.customer_wrap{
 		width: 100vh
 	}
 	
