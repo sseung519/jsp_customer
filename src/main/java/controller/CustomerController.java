@@ -130,7 +130,7 @@ public class CustomerController extends HttpServlet {
 		return "redirect:/index"; 
 	}
 	
-	//수정할 고의 기존 데이터를 가지고 와서 request 객체에 넣어준다.
+	//수정할 고객의 기존 데이터를 가지고 와서 request 객체에 넣어준다.
 	public String getViewForEdit(HttpServletRequest request) {
 		int id = Integer.parseInt(request.getParameter("id"));
 		
@@ -175,7 +175,7 @@ public class CustomerController extends HttpServlet {
 			try {
 				//쿼리스트링의 한글깨짐을 방지하기 위해 UTF-8로 인코딩
 				String encodeName = URLEncoder.encode("게시물이 정상적으로 수정되지 않았습니다!", "UTF-8");
-				return "redirect://view?board_no="+c.getId()+"&error=" + encodeName;
+				return "redirect://view?id="+c.getId()+"&error=" + encodeName;
 			} catch (UnsupportedEncodingException e1) {
 				e1.printStackTrace();
 			}
